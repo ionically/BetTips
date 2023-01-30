@@ -15,7 +15,7 @@ class LoginViewModel: ObservableObject {
     // MARK: Errors
     @Published var emailValidationFail = false
     @Published var passwordValidationFail = false
-    @Published var loginFail = (false, "")
+    @Published var loginFail = false
     
     
     // MARK: Loader

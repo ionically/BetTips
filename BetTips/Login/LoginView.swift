@@ -32,25 +32,20 @@ extension LoginView {
     var defaultForm: some View {
             VStack {
                 // MARK: logo & app name
-                Spacer()
-                    .frame(height: 32)
-                Text("logo")
-                Spacer().frame(height: 40)
-                Text(LocalizedStringKey(LoginStrings.loginButton.localized(.backendDefault))).subTitleText()
-                Spacer().frame(height: 20)
-                Text(LocalizedStringKey(LoginStrings.appName.localized(.backendDefault))).titleText()
+                Spacer().frame(height: 80)
+                Text(LoginStrings.appName).appLabels()
                 Spacer()
                     .frame(height: 10)
                 
                 // MARK: login form
                 VStack(alignment: .leading) {
                     // MARK: Username
-                    Text(Strings.Login.usernameLabel.localized(.backendDefault)).buttonTextGrey()
+                    Text(LoginStrings.usernameLabel).formLabels()
                     
-                    TextField(Strings.Login.usernamePlaceholder.localized(.backendDefault),
+                    TextField(LoginStrings.usernamePlaceholder,
                               text: $viewModel.loginForm.txtUsername)
                         .font(.custom("OpenSans-SemiBold", size: 14))
-                        .foregroundColor(Color(hexString: "#363E45"))
+                        .foregroundColor(Color("foreground-textedit"))
                         .frame(height: 28)
                         .padding()
                         .background(
@@ -59,20 +54,20 @@ extension LoginView {
                         )
                         .keyboardType(.emailAddress)
                         .alert(isPresented: $viewModel.emailValidationFail) { () -> Alert in
-                            Alert(title: Text(Strings.Login.emailValidateError.localized(.backendDefault)),
-                                  dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
+                            Alert(title: Text(LoginStrings.emailValidateError),
+                                  dismissButton: .default(Text(CommonStrings.okay)))
                         }
                     Spacer()
                         .frame(height: 32)
                     
                     // MARK: password
-                    Text(Strings.Login.passwordLabel.localized(.backendDefault))
-                        .buttonTextGrey()
+                    Text(LoginStrings.passwordLabel)
+                        .formLabels()
                     
-                    SecureField(Strings.Login.passwordPlaceholder.localized(.backendDefault),
+                    SecureField(LoginStrings.passwordPlaceholder,
                                 text: $viewModel.loginForm.txtPassword)
                         .font(.custom("OpenSans-SemiBold", size: 14))
-                        .foregroundColor(Color(hexString: "#363E45"))
+                        .foregroundColor(Color("foreground-textedit"))
                         .frame(height: 28)
                         .padding()
                         .background(
@@ -80,8 +75,8 @@ extension LoginView {
                                 .stroke(Color.gray, lineWidth: 1)
                         )
                         .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
-                            Alert(title: Text(Strings.Login.passwordValidateError.localized(.backendDefault)),
-                                  dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
+                            Alert(title: Text(LoginStrings.passwordValidateError),
+                                  dismissButton: .default(Text(CommonStrings.okay)))
                         }
                     Spacer()
                         .frame(height: 32)
@@ -90,9 +85,9 @@ extension LoginView {
                             .frame(height: 32)
                         
                         // MARK: login button
-                        Button(Strings.Login.loginButton.localized(.backendDefault), action: {
-                            self.viewModel.actionBtnLogin()
-                        }).portalButton(height: 56, width: 44, cornerRadius: 8)
+                        Button(LoginStrings.loginButton, action: {
+                            self.viewModel.login()
+                        }).formButton(height: 56, width: 44, cornerRadius: 8)
                     }
                     Group {
                         Spacer()
@@ -102,10 +97,10 @@ extension LoginView {
                     
                 }.padding(22)
                 Spacer()
-                    .alert(isPresented: $viewModel.loginFail.0) { () -> Alert in
-                        return  Alert(title: Text(viewModel.loginFail.1),
+                    .alert(isPresented: $viewModel.loginFail) { () -> Alert in
+                        return  Alert(title: Text("Log in failed"),
                                       message: nil,
-                                      dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
+                                      dismissButton: .default(Text(CommonStrings.okay)))
                     }
             }
     }

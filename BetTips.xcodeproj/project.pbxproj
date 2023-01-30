@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
 		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
+		CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */; };
+		CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA42987E82A004CED31 /* Text+Extension.swift */; };
+		CADBBCA72987E85D004CED31 /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA62987E85D004CED31 /* Colors+Extension.swift */; };
+		CADBBCA92987EB69004CED31 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA82987EB69004CED31 /* Button+Extension.swift */; };
+		CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */; };
 		F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8202987D16200614035 /* BetTipsApp.swift */; };
 		F87BE8232987D16200614035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8222987D16200614035 /* ContentView.swift */; };
 		F87BE8252987D16300614035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87BE8242987D16300614035 /* Assets.xcassets */; };
@@ -40,6 +45,11 @@
 /* Begin PBXFileReference section */
 		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
+		CADBBCA42987E82A004CED31 /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
+		CADBBCA62987E85D004CED31 /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
+		CADBBCA82987EB69004CED31 /* Button+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extension.swift"; sourceTree = "<group>"; };
+		CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		F87BE81D2987D16200614035 /* BetTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87BE8202987D16200614035 /* BetTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTipsApp.swift; sourceTree = "<group>"; };
 		F87BE8222987D16200614035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +92,7 @@
 		CA88EA9E2987E4FC00BD7F4D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CADBBCA12987E7E7004CED31 /* Designs */,
 				CA88EA9F2987E50600BD7F4D /* Views */,
 			);
 			path = Utility;
@@ -110,6 +121,18 @@
 				CA88EAA42987E57000BD7F4D /* Strings.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CADBBCA12987E7E7004CED31 /* Designs */ = {
+			isa = PBXGroup;
+			children = (
+				CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */,
+				CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */,
+				CADBBCA42987E82A004CED31 /* Text+Extension.swift */,
+				CADBBCA62987E85D004CED31 /* Colors+Extension.swift */,
+				CADBBCA82987EB69004CED31 /* Button+Extension.swift */,
+			);
+			path = Designs;
 			sourceTree = "<group>";
 		};
 		F87BE8142987D16100614035 = {
@@ -301,9 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADBBCA72987E85D004CED31 /* Colors+Extension.swift in Sources */,
 				F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */,
 				F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */,
 				CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */,
+				CADBBCA92987EB69004CED31 /* Button+Extension.swift in Sources */,
+				CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */,
+				CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */,
+				CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */,
 				F87BE8232987D16200614035 /* ContentView.swift in Sources */,
 				CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
