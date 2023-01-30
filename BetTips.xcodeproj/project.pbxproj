@@ -15,7 +15,6 @@
 		CADBBCA92987EB69004CED31 /* Button+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA82987EB69004CED31 /* Button+Extension.swift */; };
 		CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */; };
 		F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8202987D16200614035 /* BetTipsApp.swift */; };
-		F87BE8232987D16200614035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8222987D16200614035 /* ContentView.swift */; };
 		F87BE8252987D16300614035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87BE8242987D16300614035 /* Assets.xcassets */; };
 		F87BE8282987D16300614035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87BE8272987D16300614035 /* Preview Assets.xcassets */; };
 		F87BE8322987D16400614035 /* BetTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8312987D16400614035 /* BetTipsTests.swift */; };
@@ -52,7 +51,6 @@
 		CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
 		F87BE81D2987D16200614035 /* BetTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87BE8202987D16200614035 /* BetTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTipsApp.swift; sourceTree = "<group>"; };
-		F87BE8222987D16200614035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F87BE8242987D16300614035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F87BE8272987D16300614035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F87BE82D2987D16400614035 /* BetTipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetTipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +160,6 @@
 				CA88EA9E2987E4FC00BD7F4D /* Utility */,
 				CA88EAA32987E56400BD7F4D /* Resource */,
 				F87BE8202987D16200614035 /* BetTipsApp.swift */,
-				F87BE8222987D16200614035 /* ContentView.swift */,
 				F87BE8242987D16300614035 /* Assets.xcassets */,
 				F87BE8262987D16300614035 /* Preview Content */,
 			);
@@ -332,7 +329,6 @@
 				CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */,
 				CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */,
 				CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */,
-				F87BE8232987D16200614035 /* ContentView.swift in Sources */,
 				CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
 			);
