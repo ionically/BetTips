@@ -14,6 +14,8 @@
 		F87BE8322987D16400614035 /* BetTipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8312987D16400614035 /* BetTipsTests.swift */; };
 		F87BE83C2987D16400614035 /* BetTipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE83B2987D16400614035 /* BetTipsUITests.swift */; };
 		F87BE83E2987D16400614035 /* BetTipsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE83D2987D16400614035 /* BetTipsUITestsLaunchTests.swift */; };
+		F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9DA1E2987D70F004D81B8 /* LoginView.swift */; };
+		F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C9DA202987D758004D81B8 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		F87BE8372987D16400614035 /* BetTipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetTipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87BE83B2987D16400614035 /* BetTipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTipsUITests.swift; sourceTree = "<group>"; };
 		F87BE83D2987D16400614035 /* BetTipsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTipsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8C9DA1E2987D70F004D81B8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F8C9DA202987D758004D81B8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				F87BE8202987D16200614035 /* BetTipsApp.swift */,
 				F87BE8222987D16200614035 /* ContentView.swift */,
+				F8C9DA1E2987D70F004D81B8 /* LoginView.swift */,
+				F8C9DA202987D758004D81B8 /* LoginViewModel.swift */,
 				F87BE8242987D16300614035 /* Assets.xcassets */,
 				F87BE8262987D16300614035 /* Preview Content */,
 			);
@@ -257,6 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */,
+				F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */,
 				F87BE8232987D16200614035 /* ContentView.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
 			);
