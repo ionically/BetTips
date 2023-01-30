@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
+		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
 		F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8202987D16200614035 /* BetTipsApp.swift */; };
 		F87BE8232987D16200614035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87BE8222987D16200614035 /* ContentView.swift */; };
 		F87BE8252987D16300614035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87BE8242987D16300614035 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F87BE81D2987D16200614035 /* BetTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87BE8202987D16200614035 /* BetTipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTipsApp.swift; sourceTree = "<group>"; };
 		F87BE8222987D16200614035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA88EA9E2987E4FC00BD7F4D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CA88EA9F2987E50600BD7F4D /* Views */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CA88EA9F2987E50600BD7F4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA88EAA02987E50D00BD7F4D /* LoaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA88EAA22987E54C00BD7F4D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F8C9DA1E2987D70F004D81B8 /* LoginView.swift */,
+				F8C9DA202987D758004D81B8 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA88EAA32987E56400BD7F4D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CA88EAA42987E57000BD7F4D /* Strings.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		F87BE8142987D16100614035 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +135,11 @@
 		F87BE81F2987D16200614035 /* BetTips */ = {
 			isa = PBXGroup;
 			children = (
+				CA88EAA22987E54C00BD7F4D /* Login */,
+				CA88EA9E2987E4FC00BD7F4D /* Utility */,
+				CA88EAA32987E56400BD7F4D /* Resource */,
 				F87BE8202987D16200614035 /* BetTipsApp.swift */,
 				F87BE8222987D16200614035 /* ContentView.swift */,
-				F8C9DA1E2987D70F004D81B8 /* LoginView.swift */,
-				F8C9DA202987D758004D81B8 /* LoginViewModel.swift */,
 				F87BE8242987D16300614035 /* Assets.xcassets */,
 				F87BE8262987D16300614035 /* Preview Content */,
 			);
@@ -265,7 +303,9 @@
 			files = (
 				F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */,
 				F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */,
+				CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */,
 				F87BE8232987D16200614035 /* ContentView.swift in Sources */,
+				CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

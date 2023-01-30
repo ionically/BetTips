@@ -18,22 +18,11 @@ struct LoginView: View {
                 }
             }
             .navigationViewStyle(StackNavigationViewStyle())
-            .onAppear{
-                AppDelegate.orientationLock = .portrait
-            }
+            .onAppear {}
             .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())
             .navigationBarHidden(true).navigationViewStyle(StackNavigationViewStyle())
-            .onReceive(self.viewModel.$loginSuccess, perform: { success in
-                if success == true {
-                    let sceneDelegate = UIApplication.shared.connectedScenes
-                        .first!.delegate as? SceneDelegate
-                    sceneDelegate?.window!.rootViewController = UIHostingController(rootView: viewModel.getView())
-                }
-            })
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .navigate(to: WebViewDemo(), when: $viewModel.showWebView)
-        .navigate(to: ForgotPwdView(viewModel: .init(repo: LoginWebRepo())), when: $showingForgotPwdScreen)
         .navigationViewStyle(StackNavigationViewStyle())
     }
 }
@@ -45,11 +34,11 @@ extension LoginView {
                 // MARK: logo & app name
                 Spacer()
                     .frame(height: 32)
-                Image("logo")
+                Text("logo")
                 Spacer().frame(height: 40)
-                Text(LocalizedStringKey(Strings.Login.loginButton.localized(.backendDefault))).subTitleText()
+                Text(LocalizedStringKey(LoginStrings.loginButton.localized(.backendDefault))).subTitleText()
                 Spacer().frame(height: 20)
-                Text(LocalizedStringKey(Strings.Login.appName.localized(.backendDefault))).titleText()
+                Text(LocalizedStringKey(LoginStrings.appName.localized(.backendDefault))).titleText()
                 Spacer()
                     .frame(height: 10)
                 
@@ -71,7 +60,7 @@ extension LoginView {
                         .keyboardType(.emailAddress)
                         .alert(isPresented: $viewModel.emailValidationFail) { () -> Alert in
                             Alert(title: Text(Strings.Login.emailValidateError.localized(.backendDefault)),
-                                  dismissButton: .default(Text(PortalCommon.okay.localized(.backendDefault))))
+                                  dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
                         }
                     Spacer()
                         .frame(height: 32)
@@ -92,7 +81,7 @@ extension LoginView {
                         )
                         .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
                             Alert(title: Text(Strings.Login.passwordValidateError.localized(.backendDefault)),
-                                  dismissButton: .default(Text(PortalCommon.okay.localized(.backendDefault))))
+                                  dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
                         }
                     Spacer()
                         .frame(height: 32)
@@ -109,34 +98,6 @@ extension LoginView {
                         Spacer()
                             .frame(height: 10)
                         
-                        // MARK: Go to signup page
-                        HStack {
-                            Spacer()
-                            Button(action: {
-                                showingForgotPwdScreen.toggle()
-                            }) {
-                                HStack {
-                                    Text(ForgotPwd.forgotPwd.localized(.backendDefault)).paragraphTextEldBlue16()
-                                }
-                            }
-                            Spacer()
-                        }
-                    }
-                    
-                    if debugFlag  {
-                        Spacer()
-                            .frame(height: 50)
-                        Text("DEBUG MODE").paragraphTextEldBlack14()
-                        Text("ON").textGreen()
-//                        HStack {
-//                            Button(action: {
-//                                viewModel.showWebView = true
-//                            }) {
-//                                HStack {
-//                                    Text("WebView Demo").paragraphTextEldBlue16()
-//                                }
-//                            }
-//                        }
                     }
                     
                 }.padding(22)
@@ -144,7 +105,7 @@ extension LoginView {
                     .alert(isPresented: $viewModel.loginFail.0) { () -> Alert in
                         return  Alert(title: Text(viewModel.loginFail.1),
                                       message: nil,
-                                      dismissButton: .default(Text(PortalCommon.okay.localized(.backendDefault))))
+                                      dismissButton: .default(Text(CommonStrings.okay.localized(.backendDefault))))
                     }
             }
     }
@@ -152,6 +113,6 @@ extension LoginView {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: .init(repo: LoginWebRepo(), logout: false, assetWebRepo: AssetWebRepo()))
+        LoginView(viewModel: .init())
     }
 }
