@@ -40,10 +40,10 @@ extension LoginView {
                 // MARK: login form
                 VStack(alignment: .leading) {
                     // MARK: Username
-                    Text(LoginStrings.usernameLabel).formLabels()
+                    Text(LoginStrings.usernamePlaceholder).formLabels()
                     
                     TextField(LoginStrings.usernamePlaceholder,
-                              text: $viewModel.loginForm.txtUsername)
+                              text: $viewModel.loginForm.txtEmail)
                         .font(.custom("OpenSans-SemiBold", size: 14))
                         .foregroundColor(Color("foreground-textedit"))
                         .frame(height: 28)
@@ -83,6 +83,8 @@ extension LoginView {
                     Group {
                         Spacer()
                             .frame(height: 32)
+                        
+                    
                         
                         // MARK: login button
                         Button(LoginStrings.loginButton, action: {
