@@ -17,7 +17,7 @@ struct LoginView: View {
                     LoaderView()
                 }
             }
-            .background(Color("login-backgroundColor"))
+            .background(Color("login-background"))
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {}
             .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())
@@ -52,7 +52,7 @@ extension LoginView {
                         .frame(height: 28)
                         .padding()
                         .background(
-                            RoundedRectangle(cornerRadius: 30, style: .continuous).fill(Color("email-field-inside-color"))
+                            RoundedRectangle(cornerRadius: 30, style: .continuous).fill(Color("email-field-inside"))
                         )
                         .keyboardType(.emailAddress)
                         .alert(isPresented: $viewModel.emailValidationFail) { () -> Alert in
@@ -70,7 +70,7 @@ extension LoginView {
                    
                 }.padding(22)
                 
-                // MARK: Alert to show error 
+                // MARK: Alert to show error
                 Spacer()
                     .alert(isPresented: $viewModel.loginFail) { () -> Alert in
                         return  Alert(title: Text("Log in failed"),
