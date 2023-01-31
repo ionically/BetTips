@@ -89,7 +89,6 @@ extension LoginView {
                         // MARK: login button
                         Button(LoginStrings.loginButton, action: {
                             self.viewModel.login()
-                            self.loginButton;,action:("buttonClicked:")
                         }).borderButton(height: 56, width: 44, cornerRadius: 30)
                         
                     }

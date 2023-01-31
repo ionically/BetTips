@@ -1,18 +1,12 @@
+import Foundation
 import SwiftUI
-import Combine
 
-class DashboardViewModel: ObservableObject {
+class DashboardViewModel {
+   
     
-    @Published var dashboardForm = DashboardFormState(txtSenderMessage: "")
-    
-    // MARK: Loader
-    @Published var showLoader = false
-    
-    // MARK: Init
+    let title = "Dashboard"
     init() {}
-}
+ 
+    }
+    
 
-
-struct DashboardFormState {
-    var txtSenderMessage: String = ""
-}
