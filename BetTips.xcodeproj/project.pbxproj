@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CA33094F2988CBC4002CD089 /* BorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33094E2988CBC4002CD089 /* BorderButtonStyle.swift */; };
 		CA3309522988CCDB002CD089 /* Login Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3309512988CCDB002CD089 /* Login Screen.png */; };
+		CA3309552989223E002CD089 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3309542989223E002CD089 /* DashboardView.swift */; };
+		CA3309572989224F002CD089 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3309562989224F002CD089 /* DashboardViewModel.swift */; };
+		CA33095C29892752002CD089 /* Dashboard Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA33095B29892752002CD089 /* Dashboard Screen.png */; };
 		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
 		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
 		CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */; };
@@ -46,6 +49,9 @@
 /* Begin PBXFileReference section */
 		CA33094E2988CBC4002CD089 /* BorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtonStyle.swift; sourceTree = "<group>"; };
 		CA3309512988CCDB002CD089 /* Login Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Screen.png"; sourceTree = "<group>"; };
+		CA3309542989223E002CD089 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		CA3309562989224F002CD089 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		CA33095B29892752002CD089 /* Dashboard Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dashboard Screen.png"; sourceTree = "<group>"; };
 		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
@@ -94,14 +100,32 @@
 		CA3309502988CCAC002CD089 /* Screens  */ = {
 			isa = PBXGroup;
 			children = (
+				CA33095B29892752002CD089 /* Dashboard Screen.png */,
 				CA3309512988CCDB002CD089 /* Login Screen.png */,
 			);
 			path = "Screens ";
 			sourceTree = "<group>";
 		};
+		CA33095329892231002CD089 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CA3309542989223E002CD089 /* DashboardView.swift */,
+				CA3309562989224F002CD089 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		CA3309582989231F002CD089 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		CA88EA9E2987E4FC00BD7F4D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CA3309582989231F002CD089 /* Navigation */,
 				CADBBCA12987E7E7004CED31 /* Designs */,
 				CA88EA9F2987E50600BD7F4D /* Views */,
 			);
@@ -169,6 +193,7 @@
 		F87BE81F2987D16200614035 /* BetTips */ = {
 			isa = PBXGroup;
 			children = (
+				CA33095329892231002CD089 /* Dashboard */,
 				CA88EAA22987E54C00BD7F4D /* Login */,
 				CA88EA9E2987E4FC00BD7F4D /* Utility */,
 				CA88EAA32987E56400BD7F4D /* Resource */,
@@ -319,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3309522988CCDB002CD089 /* Login Screen.png in Resources */,
+				CA33095C29892752002CD089 /* Dashboard Screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CADBBCA72987E85D004CED31 /* Colors+Extension.swift in Sources */,
+				CA3309552989223E002CD089 /* DashboardView.swift in Sources */,
 				F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */,
 				F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */,
 				CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */,
@@ -345,6 +372,7 @@
 				CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */,
 				CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */,
 				CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */,
+				CA3309572989224F002CD089 /* DashboardViewModel.swift in Sources */,
 				CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
 			);
