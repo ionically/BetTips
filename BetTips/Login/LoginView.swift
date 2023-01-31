@@ -36,7 +36,7 @@ extension LoginView {
             Text(LoginStrings.appName).appLabels()
             Spacer()
                 .frame(height: 10)
-            
+                .foregroundColor(Color("primary.light"))
             // MARK: login form
             VStack(alignment: .leading) {
                 // MARK: Username
@@ -50,7 +50,7 @@ extension LoginView {
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .stroke(Color.gray, lineWidth: 1)
+                        .stroke(Color.black, lineWidth: 1)
                 )
                 .keyboardType(.emailAddress)
                 .alert(isPresented: $viewModel.emailValidationFail) { () -> Alert in
@@ -60,42 +60,36 @@ extension LoginView {
                 Spacer()
                     .frame(height: 32)
                 
-                //MARK: password
-                Text(LoginStrings.passwordLabel)
-                    .formLabels()
-                
-                SecureField(LoginStrings.passwordPlaceholder,
-                            text: $viewModel.loginForm.txtPassword)
-                .font(.custom("OpenSans-SemiBold", size: 14))
-                .foregroundColor(Color("foreground-textedit"))
-                .frame(height: 28)
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 8, style: .continuous)
-                        .stroke(Color.gray, lineWidth: 1)
-                )
-                .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
-                    Alert(title: Text(LoginStrings.passwordValidateError),
-                          dismissButton: .default(Text(CommonStrings.okay)))
-                }
-                Spacer()
-                    .frame(height: 32)
-                Group {
-                    Spacer()
-                        .frame(height: 32)
-                    
-                    
+//                //MARK: password
+//                Text(LoginStrings.passwordLabel)
+//                    .formLabels()
+//
+//                SecureField(LoginStrings.passwordPlaceholder,
+//                            text: $viewModel.loginForm.txtPassword)
+//                .font(.custom("OpenSans-SemiBold", size: 14))
+//                .foregroundColor(Color("foreground-textedit"))
+//                .frame(height: 28)
+//                .padding()
+//                .background(
+//                    RoundedRectangle(cornerRadius: 8, style: .continuous)
+//                        .stroke(Color.gray, lineWidth: 1)
+//                )
+//                .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
+//                    Alert(title: Text(LoginStrings.passwordValidateError),
+//                          dismissButton: .default(Text(CommonStrings.okay)))
+//                }
+//                Spacer()
+//                    .frame(height: 32)
+//                Group {
+//                    Spacer()
+//                        .frame(height: 32)
+//
+//
                     
                     // MARK: login button
                     Button(LoginStrings.loginButton, action: {
                         self.viewModel.login()
                     }).formButton(height: 56, width: 44, cornerRadius: 8)
-                    
-                    // MARK: login button
-                    Button(LoginStrings.loginButton1, action: {
-                        self.viewModel.login()
-                    }).formButton(height: 56, width: 44, cornerRadius: 30)
-                    
                 }
                 Group {
                     Spacer()
@@ -118,4 +112,4 @@ extension LoginView {
             LoginView(viewModel: .init())
         }
     }
-}
+

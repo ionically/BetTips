@@ -3,9 +3,7 @@ struct Strings {
     struct Login {
         static let appName = "Login"
         static let usernameLabel = "Email"
-        static let passwordLabel = "Password"
         static let usernamePlaceholder = "Email"
-        static let passwordPlaceholder = "Password"
         static let loginButton = "LOGIN WITH EMAIL"
         static let loginButton1 = "LOGIN AS GUEST*"
         static let loginButton2 = "F"
