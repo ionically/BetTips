@@ -1,16 +1,11 @@
-//
-//  LoginView.swift
-//  Asset Tracker
-//
-
 import SwiftUI
 
 struct LoginView: View {
-
+    
     @ObservedObject private(set) var viewModel: LoginViewModel
     @State private var showingForgotPwdScreen = false
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 defaultForm
                 if viewModel.showLoader {
@@ -20,11 +15,14 @@ struct LoginView: View {
             .background(Color("login-background"))
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {}
-            .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())
-            .navigationBarHidden(true).navigationViewStyle(StackNavigationViewStyle())
+            .navigationDestination(isPresented: $viewModel.showDashboard) {
+                DashboardView(viewModel: .init())
+            }
+            .navigationTitle("")
+            
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .navigationViewStyle(StackNavigationViewStyle())
+        
     }
 }
 

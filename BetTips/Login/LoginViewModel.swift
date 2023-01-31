@@ -3,20 +3,16 @@ import Combine
 
 class LoginViewModel: ObservableObject {
     
-    // MARK: Must have
-    
-    
     // MARK: View state
     @Published var loginForm = LoginFormState(txtEmail: "")
     
-    
-    @Published var checkBox = false
+    // MARK: Show Dashboard
+    @Published var showDashboard = false
     
     // MARK: Errors
     @Published var emailValidationFail = false
     @Published var passwordValidationFail = false
     @Published var loginFail = false
-    
     
     // MARK: Loader
     @Published var showLoader = false
@@ -26,30 +22,24 @@ class LoginViewModel: ObservableObject {
             
     // MARK: Validations
     func formValidate() -> Bool {
-        if !loginForm.txtEmail.isEmpty {
-            if !loginForm.txtPassword.isEmpty {
-                return true
-            } else {
-                passwordValidationFail = true
-                return false
-            }
-        } else {
+        if loginForm.txtEmail.isEmpty {
             emailValidationFail = true
             return false
         }
+        return true
     }
     
-    // MARK: API
-    func login() {}
+    // MARK: Login Button clicked
+    func login() {
+        // we will uncomment this below line when
+        // api will be called on login button
+        // formValidate()
+        
+        showDashboard = true
+    }
     
-//MARK: button
-    func Button1() {}
-    func Button2() {}
-    func Button3() {}
-    func Button4() {}
 }
 
 struct LoginFormState {
     var txtEmail: String = ""
-    var txtPassword: String = ""
 }
