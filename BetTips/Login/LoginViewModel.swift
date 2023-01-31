@@ -34,31 +34,11 @@ class LoginViewModel: ObservableObject {
         // we will uncomment this below line when
         // api will be called on login button
         // formValidate()
-//        //Login Button
-//                  Button(
-//                      action:
-//                      {
-//                      // Open Signup Screen
-//                          Signup();
-//                      },
-//                      label:
-//                      {
-//                      // How the button looks li
-//                      Text("Create New Account")
-//                      .foregroundColor(.white)
-//                      .font(.title)
-//                      }
-//                      )
-//                      .frame(maxWidth: .infinity, alignment: .center)
-//                      .background(Color(red: 0.22, green: 0.655, blue: 0.02))
-//                      .cornerRadius(8)
-//                      .padding(.horizontal, metrics.size.width*0.10)
-//
-              }
         
-//        showDashboard = true
+        showDashboard = true
     }
     
+}
 
 struct LoginFormState {
     var txtEmail: String = ""
