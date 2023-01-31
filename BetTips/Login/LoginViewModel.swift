@@ -47,7 +47,6 @@ class LoginViewModel: ObservableObject {
     func Button2() {}
     func Button3() {}
     func Button4() {}
-   
 }
 
 struct LoginFormState {

@@ -17,6 +17,7 @@ struct LoginView: View {
                     LoaderView()
                 }
             }
+            .background(Color("login-backgroundColor"))
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {}
             .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())
@@ -60,44 +61,37 @@ extension LoginView {
                     Spacer()
                         .frame(height: 32)
                     
-                    // MARK: password
-                    Text(LoginStrings.passwordLabel)
-                        .formLabels()
-                    
-                    SecureField(LoginStrings.passwordPlaceholder,
-                                text: $viewModel.loginForm.txtPassword)
-                        .font(.custom("OpenSans-SemiBold", size: 14))
-                        .foregroundColor(Color("foreground-textedit"))
-                        .frame(height: 28)
-                        .padding()
-                        .background(
-                            RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
-                            Alert(title: Text(LoginStrings.passwordValidateError),
-                                  dismissButton: .default(Text(CommonStrings.okay)))
-                        }
-                    Spacer()
-                        .frame(height: 32)
+//                    // MARK: password
+//                    Text(LoginStrings.passwordLabel)
+//                        .formLabels()
+//
+//                    SecureField(LoginStrings.passwordPlaceholder,
+//                                text: $viewModel.loginForm.txtPassword)
+//                        .font(.custom("OpenSans-SemiBold", size: 14))
+//                        .foregroundColor(Color("foreground-textedit"))
+//                        .frame(height: 28)
+//                        .padding()
+//                        .background(
+//                            RoundedRectangle(cornerRadius: 8, style: .continuous)
+//                                .stroke(Color.gray, lineWidth: 1)
+//                        )
+//                        .alert(isPresented: $viewModel.passwordValidationFail) { () -> Alert in
+//                            Alert(title: Text(LoginStrings.passwordValidateError),
+//                                  dismissButton: .default(Text(CommonStrings.okay)))
+//                        }
+//                    Spacer()
+//                        .frame(height: 32)
+            
+                    //MARK: it contains login button
                     Group {
-                        Spacer()
-                            .frame(height: 32)
-                        
-                    
+                        Spacer().frame(height: 32)
                         
                         // MARK: login button
                         Button(LoginStrings.loginButton, action: {
                             self.viewModel.login()
                         }).borderButton(height: 56, width: 44, cornerRadius: 30)
-                    
                     }
-                    Group {
-                        Spacer()
-                            .frame(height: 10)
-                        
-                    }
-                    
+                   
                 }.padding(22)
                 Spacer()
                     .alert(isPresented: $viewModel.loginFail) { () -> Alert in
