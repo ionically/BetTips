@@ -39,19 +39,19 @@ extension LoginView {
                     .frame(height: 10)
                 
                 // MARK: login form
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading) { 
                     // MARK: Username
                     Text(LoginStrings.usernamePlaceholder).formLabels()
                     
                     TextField(LoginStrings.usernamePlaceholder,
                               text: $viewModel.loginForm.txtEmail)
                         .font(.custom("OpenSans-SemiBold", size: 14))
-                        .foregroundColor(Color("foreground-textedit"))
+                        .foregroundColor(Color("primary-light"))
                         .frame(height: 28)
                         .padding()
                         .background(
                             RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                .stroke(Color.gray, lineWidth: 1)
+                                .stroke(Color("foreground-textedit"), lineWidth: 1)
                         )
                         .keyboardType(.emailAddress)
                         .alert(isPresented: $viewModel.emailValidationFail) { () -> Alert in
@@ -89,7 +89,9 @@ extension LoginView {
                         // MARK: login button
                         Button(LoginStrings.loginButton, action: {
                             self.viewModel.login()
+                            self.loginButton;,action:("buttonClicked:")
                         }).borderButton(height: 56, width: 44, cornerRadius: 30)
+                        
                     }
                    
                 }.padding(22)

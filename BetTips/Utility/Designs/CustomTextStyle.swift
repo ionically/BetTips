@@ -20,7 +20,7 @@ struct AppLabelText: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.custom("OpenSans-Bold", size: 24))
-            .foregroundColor(Color("secondary"))
+            .foregroundColor(Color("primary-light"))
             .padding(4)
     }
 }
