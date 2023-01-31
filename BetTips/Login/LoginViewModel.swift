@@ -7,7 +7,7 @@ class LoginViewModel: ObservableObject {
     
     
     // MARK: View state
-    @Published var loginForm = LoginFormState(txtEmail: "", txtPassword: "")
+    @Published var loginForm = LoginFormState(txtEmail: "")
     
     
     @Published var checkBox = false

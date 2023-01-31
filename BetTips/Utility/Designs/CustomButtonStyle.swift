@@ -3,7 +3,7 @@ struct CustomButton: ButtonStyle {
     var height, width, cornerRadius: Int
     var color: String
     var foregroundColor:Color
-    init(_ height: Int, _  width: Int, _  cornerRadius: Int, _ color: String, _ foregroundColor:Color = .white) {
+    init(_ height: Int, _  width: Int, _  cornerRadius: Int, _ color: String, _ foregroundColor:Color = .black) {
         self.height = height
         self.width = width
         self.cornerRadius = cornerRadius
@@ -19,6 +19,7 @@ struct CustomButton: ButtonStyle {
             .background(
                 RoundedRectangle(cornerRadius: CGFloat(cornerRadius), style: .continuous)
                     .foregroundColor(Color(hexString: color))
+                  
             )
     }
 }
