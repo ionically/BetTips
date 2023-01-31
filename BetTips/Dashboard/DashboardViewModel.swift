@@ -1,12 +1,10 @@
-import Foundation
+
 import SwiftUI
 
-class DashboardViewModel {
-   
-    
-    let title = "Dashboard"
-    init() {}
- 
+struct DashboardViewModel: App {
+    var body: some Scene {
+        WindowGroup {
+            DashboardView()
+        }
     }
-    
-
+}
