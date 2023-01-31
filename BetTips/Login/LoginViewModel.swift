@@ -14,7 +14,7 @@ class LoginViewModel: ObservableObject {
     
     // MARK: Errors
     @Published var emailValidationFail = false
-   // @Published var passwordValidationFail = false
+    @Published var passwordValidationFail = false
     @Published var loginFail = false
     
     
@@ -30,7 +30,7 @@ class LoginViewModel: ObservableObject {
             if !loginForm.txtPassword.isEmpty {
                 return true
             } else {
-            //    passwordValidationFail = true
+                passwordValidationFail = true
                 return false
             }
         } else {
