@@ -5,7 +5,7 @@ extension Button {
         self.buttonStyle( CustomButton(height, width, cornerRadius, color, foregroundColor))
     }
     
-    func borderButton(height: Int, width: Int, cornerRadius: Int) -> some View {
+   func borderButton(height: Int, width: Int, cornerRadius: Int) -> some View {
         self.buttonStyle(BorderButton(height, width, cornerRadius))
     }
 }

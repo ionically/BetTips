@@ -19,6 +19,7 @@ struct CustomButton: ButtonStyle {
             .background(
                 RoundedRectangle(cornerRadius: CGFloat(cornerRadius), style: .continuous)
                     .foregroundColor(Color(hexString: color))
+                  
             )
     }
 }

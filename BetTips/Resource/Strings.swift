@@ -1,7 +1,7 @@
 struct Strings {
     
     struct Login {
-        static let appName = "Smart Bet Tips"
+        static let appName = "Login"
         static let usernameLabel = "Email"
         static let passwordLabel = "Password"
         static let usernamePlaceholder = "Email"
