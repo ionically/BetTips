@@ -7,7 +7,7 @@ class LoginViewModel: ObservableObject {
     
     
     // MARK: View state
-    @Published var loginForm = LoginFormState(txtUsername: "", txtPassword: "")
+    @Published var loginForm = LoginFormState(txtEmail: "", txtPassword: "")
     
     
     @Published var checkBox = false
@@ -26,7 +26,7 @@ class LoginViewModel: ObservableObject {
             
     // MARK: Validations
     func formValidate() -> Bool {
-        if !loginForm.txtUsername.isEmpty {
+        if !loginForm.txtEmail.isEmpty {
             if !loginForm.txtPassword.isEmpty {
                 return true
             } else {
@@ -41,10 +41,16 @@ class LoginViewModel: ObservableObject {
     
     // MARK: API
     func login() {}
+    
+//MARK: button
+    func Button1() {}
+    func Button2() {}
+    func Button3() {}
+    func Button4() {}
    
 }
 
 struct LoginFormState {
-    var txtUsername: String = ""
+    var txtEmail: String = ""
     var txtPassword: String = ""
 }

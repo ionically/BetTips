@@ -11,7 +11,7 @@ struct FormLabelText: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.custom("OpenSans-Bold", size: 20))
-            .foregroundColor(Color("primary"))
+            .foregroundColor(Color("secondary"))
             .padding(4)
     }
 }
@@ -20,7 +20,7 @@ struct AppLabelText: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.custom("OpenSans-Bold", size: 24))
-            .foregroundColor(Color("primary"))
+            .foregroundColor(Color("secondary"))
             .padding(4)
     }
 }
