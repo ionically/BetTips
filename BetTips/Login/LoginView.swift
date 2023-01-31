@@ -90,6 +90,12 @@ extension LoginView {
                         Button(LoginStrings.loginButton, action: {
                             self.viewModel.login()
                         }).formButton(height: 56, width: 44, cornerRadius: 8)
+                        
+                        // MARK: login button
+                        Button(LoginStrings.loginButton, action: {
+                            self.viewModel.login()
+                        }).borderButton(height: 56, width: 44, cornerRadius: 30)
+                    
                     }
                     Group {
                         Spacer()

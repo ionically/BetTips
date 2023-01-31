@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA33094F2988CBC4002CD089 /* BorderButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33094E2988CBC4002CD089 /* BorderButtonStyle.swift */; };
+		CA3309522988CCDB002CD089 /* Login Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3309512988CCDB002CD089 /* Login Screen.png */; };
 		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
 		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
 		CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA33094E2988CBC4002CD089 /* BorderButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButtonStyle.swift; sourceTree = "<group>"; };
+		CA3309512988CCDB002CD089 /* Login Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Screen.png"; sourceTree = "<group>"; };
 		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA3309502988CCAC002CD089 /* Screens  */ = {
+			isa = PBXGroup;
+			children = (
+				CA3309512988CCDB002CD089 /* Login Screen.png */,
+			);
+			path = "Screens ";
+			sourceTree = "<group>";
+		};
 		CA88EA9E2987E4FC00BD7F4D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 			children = (
 				CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */,
 				CADBBCAA2987EB8B004CED31 /* CustomButtonStyle.swift */,
+				CA33094E2988CBC4002CD089 /* BorderButtonStyle.swift */,
 				CADBBCA42987E82A004CED31 /* Text+Extension.swift */,
 				CADBBCA62987E85D004CED31 /* Colors+Extension.swift */,
 				CADBBCA82987EB69004CED31 /* Button+Extension.swift */,
@@ -177,6 +190,7 @@
 		F87BE8302987D16400614035 /* BetTipsTests */ = {
 			isa = PBXGroup;
 			children = (
+				CA3309502988CCAC002CD089 /* Screens  */,
 				F87BE8312987D16400614035 /* BetTipsTests.swift */,
 			);
 			path = BetTipsTests;
@@ -304,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3309522988CCDB002CD089 /* Login Screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +340,7 @@
 				F8C9DA212987D758004D81B8 /* LoginViewModel.swift in Sources */,
 				F8C9DA1F2987D70F004D81B8 /* LoginView.swift in Sources */,
 				CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */,
+				CA33094F2988CBC4002CD089 /* BorderButtonStyle.swift in Sources */,
 				CADBBCA92987EB69004CED31 /* Button+Extension.swift in Sources */,
 				CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */,
 				CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */,
