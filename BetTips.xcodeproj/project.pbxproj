@@ -11,7 +11,6 @@
 		CA3309522988CCDB002CD089 /* Login Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA3309512988CCDB002CD089 /* Login Screen.png */; };
 		CA3309552989223E002CD089 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3309542989223E002CD089 /* DashboardView.swift */; };
 		CA3309572989224F002CD089 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3309562989224F002CD089 /* DashboardViewModel.swift */; };
-		CA33095A2989232C002CD089 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3309592989232C002CD089 /* View+Extension.swift */; };
 		CA33095C29892752002CD089 /* Dashboard Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA33095B29892752002CD089 /* Dashboard Screen.png */; };
 		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
 		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
@@ -52,7 +51,6 @@
 		CA3309512988CCDB002CD089 /* Login Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Screen.png"; sourceTree = "<group>"; };
 		CA3309542989223E002CD089 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		CA3309562989224F002CD089 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
-		CA3309592989232C002CD089 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		CA33095B29892752002CD089 /* Dashboard Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dashboard Screen.png"; sourceTree = "<group>"; };
 		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		CA3309582989231F002CD089 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				CA3309592989232C002CD089 /* View+Extension.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -377,7 +374,6 @@
 				CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */,
 				CA3309572989224F002CD089 /* DashboardViewModel.swift in Sources */,
 				CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */,
-				CA33095A2989232C002CD089 /* View+Extension.swift in Sources */,
 				F87BE8212987D16200614035 /* BetTipsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
