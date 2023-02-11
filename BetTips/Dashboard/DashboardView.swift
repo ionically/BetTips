@@ -28,14 +28,15 @@ extension DashboardView {
         VStack {
             ScrollView {
                 ForEach(0..<10, id: \.self) {index in
-                    VStack {
+                    ZStack {
                         Spacer()
-                        HStack {
-                            Text("Title")
+                        VStack {
+                            Text("MESSAGE BAR")
                             Spacer()
-                            Text("Subtitle")
+                            Text("You can find some `better` BETTips here...")
                             Spacer().frame(width: 4)
-                        }.padding([.leading, .trailing], 4)
+                            
+                        }.padding([.bottom, .trailing], 4)
                         
                     }.frame(height: 56)
                     Spacer()
