@@ -31,7 +31,8 @@ extension DashboardView {
                     ZStack {
                         Spacer()
                         VStack {
-                            Text("MESSAGE BAR")
+                            Button("MESSAGE BAR"){Button("Message Bar") { print("Button tapped!") }}
+                            
                             Spacer()
                             Text("You can find some `better` BETTips here...")
                             Spacer().frame(width: 4)
@@ -46,6 +47,7 @@ extension DashboardView {
             // MARK: Sender Text Field
             TextField(LoginStrings.usernamePlaceholder,
                       text: $viewModel.dashboardForm.txtSenderMessage)
+            Button("MESSAGE BAR"){Button("Message Bar") { print("Button tapped!") }}
                 .font(.custom("OpenSans-SemiBold", size: 20))
                 .foregroundColor(Color("primary-light"))
                 .frame(height: 28)
@@ -62,6 +64,6 @@ extension DashboardView {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView(viewModel: .init())
+        DashboardView(viewModel: .init(DashboardFormState: "Infinite tips"))
     }
 }

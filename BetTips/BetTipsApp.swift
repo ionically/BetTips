@@ -12,6 +12,7 @@ struct BetTipsApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView(viewModel: .init())
+        
         }
     }
 }

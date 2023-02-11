@@ -9,10 +9,16 @@ class DashboardViewModel: ObservableObject {
     @Published var showLoader = false
     
     // MARK: Init
-    init() {}
-}
+    init(DashboardFormState: String) {
+           
+        }
+    }
+
 
 
 struct DashboardFormState {
     var txtSenderMessage: String = ""
+}
+struct DashboardLableResponse: Codable {
+    var message: [String] = [""]
 }
