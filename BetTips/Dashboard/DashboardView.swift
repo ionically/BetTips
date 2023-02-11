@@ -27,7 +27,7 @@ extension DashboardView {
     var defaultForm: some View {
         VStack {
             ScrollView {
-                ForEach(0..<10, id: \.self) {index in
+                ForEach(0..<8, id: \.self) {index in
                     ZStack {
                         Spacer()
                         VStack {
@@ -47,17 +47,19 @@ extension DashboardView {
             // MARK: Sender Text Field
             TextField(LoginStrings.usernamePlaceholder,
                       text: $viewModel.dashboardForm.txtSenderMessage)
-            Button("MESSAGE BAR"){Button("Message Bar") { print("Button tapped!") }}
-                .font(.custom("OpenSans-SemiBold", size: 20))
-                .foregroundColor(Color("primary-light"))
-                .frame(height: 28)
+                 Button("Infinite chats tips"){Button("Infinite chat tips") { print("Button tapped!") }}
+            TextField(LoginStrings.usernamePlaceholder,
+                      text: $viewModel.dashboardForm.txtSenderMessage)
+                .font(.custom("OpenSans-SemiBold", size: 30))
+                .foregroundColor(Color("dashboard-row-textcolor"))
+                .frame(height: 40)
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 30, style: .continuous).fill(Color("email-field-inside"))
                 )
                 .keyboardType(.default)
                 
-            Spacer().frame(height: 5)
+            Spacer().frame(height: 6)
         }
     }
 }
