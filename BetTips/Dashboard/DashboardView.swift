@@ -26,23 +26,14 @@ struct DashboardView: View {
 extension DashboardView {
     var defaultForm: some View {
         VStack {
-            ScrollView {
-                ForEach(0..<10, id: \.self) {index in
-                    ZStack {
-                        Spacer()
-                        VStack {
-                            Text("MESSAGE BAR")
-                            Spacer()
-                            Text("You can find some `better` BETTips here...")
-                            Spacer().frame(width: 4)
-                            
-                        }.padding([.bottom, .trailing], 4)
-                        
-                    }.frame(height: 56)
-                    Spacer()
-                }
-            }.padding([.leading, .trailing], 10)
+            TipsList()
+                .frame(minWidth: 0,
+                       maxWidth: .infinity,
+                       minHeight: 0,
+                       maxHeight: .infinity)
             
+            Text(viewModel.dashboardForm.txtSenderMessage)
+                .foregroundColor(Color.white)
             // MARK: Sender Text Field
             TextField(LoginStrings.usernamePlaceholder,
                       text: $viewModel.dashboardForm.txtSenderMessage)

@@ -11,7 +11,8 @@ import SwiftUI
 struct BetTipsApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView(viewModel: .init())
+//            LoginView(viewModel: .init())
+            DashboardView(viewModel: .init())
         }
     }
 }
