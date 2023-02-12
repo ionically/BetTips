@@ -12,7 +12,8 @@ struct BetTipsApp: App {
     var body: some Scene {
         WindowGroup {
 //            LoginView(viewModel: .init())
-            DashboardView(viewModel: .init())
+            let data = getFeedList()
+            DashboardView(viewModel: .init(data))
         }
     }
 }

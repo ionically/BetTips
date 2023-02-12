@@ -7,9 +7,11 @@ class DashboardViewModel: ObservableObject {
     
     // MARK: Loader
     @Published var showLoader = false
-    
+    @Published var list = [FeedItem]()
     // MARK: Init
-    init() {}
+    init(_ data: [FeedItem]) {
+        self.list = data
+    }
 }
 
 

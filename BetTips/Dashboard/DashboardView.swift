@@ -26,7 +26,7 @@ struct DashboardView: View {
 extension DashboardView {
     var defaultForm: some View {
         VStack {
-            TipsList()
+            TipsList(list: viewModel.list)
                 .frame(minWidth: 0,
                        maxWidth: .infinity,
                        minHeight: 0,
@@ -51,8 +51,8 @@ extension DashboardView {
     }
 }
 
-struct DashboardView_Previews: PreviewProvider {
-    static var previews: some View {
-        DashboardView(viewModel: .init())
-    }
-}
+//struct DashboardView_Previews: PreviewProvider {
+//    static var previews: some View {
+//      //  DashboardView(viewModel: .init())
+//    }
+//}

@@ -1,0 +1,17 @@
+{
+    "feedList": [
+        
+        {
+            "userId": 5,
+            "email": "test1@gmail.com",
+            "message": "Hello, i have a new tip for @everyone. Match Manchest United versus T..... Bet on Manchester Win by +2 score"
+        },
+        {
+            "userId": 10,
+            "email": "test1@gmail.com",
+            "message": "Hello, i have a new tip for @everyone. Match A versus T..... Bet on A Win by +1 score"
+        }
+        
+    ]
+}
+

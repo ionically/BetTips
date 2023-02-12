@@ -16,7 +16,7 @@ struct LoginView: View {
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {}
             .navigationDestination(isPresented: $viewModel.showDashboard) {
-                DashboardView(viewModel: .init())
+              //  DashboardView(viewModel: .init())
             }
             .navigationTitle("")
             
