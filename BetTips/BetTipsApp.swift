@@ -11,9 +11,14 @@ import SwiftUI
 struct BetTipsApp: App {
     var body: some Scene {
         WindowGroup {
-//            LoginView(viewModel: .init())
-//            let data = getFeedList()
-            DashboardView(viewModel: .init())
+            //LoginView(viewModel: .init())
+            
+            // From Local then this
+            let data = getFeedList()
+            DashboardView(viewModel: .init(data))
+            
+            // From Api then this
+            // DashboardView(viewModel: .init())
         }
     }
 }

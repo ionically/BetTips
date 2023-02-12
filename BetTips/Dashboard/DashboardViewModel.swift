@@ -17,6 +17,11 @@ class DashboardViewModel: ObservableObject {
         self.httpClient = FeedListApi()
     }
     
+    init(_ data: [FeedItem]) {
+        self.list = data
+        self.httpClient = FeedListApi()
+    }
+    
     func updateList() {
         httpClient.getFeedList()
             .receive(on: DispatchQueue.main)
