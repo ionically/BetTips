@@ -8,9 +8,9 @@ struct DashboardView: View {
         NavigationStack {
             ZStack {
                 defaultForm
-                if viewModel.showLoader {
-                    LoaderView()
-                }
+//                if viewModel.showLoader {
+//                    LoaderView()
+//                }
             }
             .background(Color("dashboard-background"))
             .navigationViewStyle(StackNavigationViewStyle())

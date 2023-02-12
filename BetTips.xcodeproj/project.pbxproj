@@ -14,6 +14,8 @@
 		CA33095C29892752002CD089 /* Dashboard Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = CA33095B29892752002CD089 /* Dashboard Screen.png */; };
 		CA76BC972998244E00F76553 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76BC962998244E00F76553 /* ApiClient.swift */; };
 		CA76D968299876C500DCC103 /* TipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76D967299876C500DCC103 /* TipsList.swift */; };
+		CA76D9AD2998B71400DCC103 /* ReadFromApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76D9AC2998B71400DCC103 /* ReadFromApi.swift */; };
+		CA76D9AF2998B96C00DCC103 /* Test APIs.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA76D9AE2998B96C00DCC103 /* Test APIs.rtf */; };
 		CA88EAA12987E50D00BD7F4D /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA02987E50D00BD7F4D /* LoaderView.swift */; };
 		CA88EAA52987E57000BD7F4D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88EAA42987E57000BD7F4D /* Strings.swift */; };
 		CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */; };
@@ -58,6 +60,8 @@
 		CA33095B29892752002CD089 /* Dashboard Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dashboard Screen.png"; sourceTree = "<group>"; };
 		CA76BC962998244E00F76553 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		CA76D967299876C500DCC103 /* TipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsList.swift; sourceTree = "<group>"; };
+		CA76D9AC2998B71400DCC103 /* ReadFromApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadFromApi.swift; sourceTree = "<group>"; };
+		CA76D9AE2998B96C00DCC103 /* Test APIs.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Test APIs.rtf"; sourceTree = "<group>"; };
 		CA88EAA02987E50D00BD7F4D /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		CA88EAA42987E57000BD7F4D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		CADBBCA22987E7F2004CED31 /* CustomTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextStyle.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				CA33095B29892752002CD089 /* Dashboard Screen.png */,
 				CA3309512988CCDB002CD089 /* Login Screen.png */,
+				CA76D9AE2998B96C00DCC103 /* Test APIs.rtf */,
 			);
 			path = "Screens ";
 			sourceTree = "<group>";
@@ -133,9 +138,9 @@
 		CA76BC952998244100F76553 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CA76D9AB2998B66B00DCC103 /* Read From Remote */,
 				F8B518592998A9ED00C69275 /* Read From Local */,
 				F8B518502998A00F00C69275 /* JSONFiles */,
-				CA76BC962998244E00F76553 /* ApiClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -146,6 +151,15 @@
 				CA76D967299876C500DCC103 /* TipsList.swift */,
 			);
 			path = TipsList;
+			sourceTree = "<group>";
+		};
+		CA76D9AB2998B66B00DCC103 /* Read From Remote */ = {
+			isa = PBXGroup;
+			children = (
+				CA76BC962998244E00F76553 /* ApiClient.swift */,
+				CA76D9AC2998B71400DCC103 /* ReadFromApi.swift */,
+			);
+			path = "Read From Remote";
 			sourceTree = "<group>";
 		};
 		CA88EA9E2987E4FC00BD7F4D /* Utility */ = {
@@ -389,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3309522988CCDB002CD089 /* Login Screen.png in Resources */,
+				CA76D9AF2998B96C00DCC103 /* Test APIs.rtf in Resources */,
 				CA33095C29892752002CD089 /* Dashboard Screen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +432,7 @@
 				CA33094F2988CBC4002CD089 /* BorderButtonStyle.swift in Sources */,
 				CADBBCA92987EB69004CED31 /* Button+Extension.swift in Sources */,
 				CA76BC972998244E00F76553 /* ApiClient.swift in Sources */,
+				CA76D9AD2998B71400DCC103 /* ReadFromApi.swift in Sources */,
 				CADBBCAB2987EB8B004CED31 /* CustomButtonStyle.swift in Sources */,
 				CADBBCA32987E7F2004CED31 /* CustomTextStyle.swift in Sources */,
 				CADBBCA52987E82A004CED31 /* Text+Extension.swift in Sources */,
