@@ -13,7 +13,12 @@ struct BetTipsApp: App {
         WindowGroup {
             //LoginView(viewModel: .init())
             
-            // From Local then this
+            /**
+             If you want to see the list from the json-data json file
+             then remove comments from line 20 & 21
+             and add comments to line 26
+            */
+            
 //            let data = getFeedList()
 //            DashboardView(viewModel: .init(data))
             
