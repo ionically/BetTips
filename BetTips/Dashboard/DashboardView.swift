@@ -8,9 +8,9 @@ struct DashboardView: View {
         NavigationStack {
             ZStack {
                 defaultForm
-                if viewModel.showLoader {
-                    LoaderView()
-                }
+              // if viewModel.showLoader {
+             //    LoaderView()
+             //   }
             }
             .background(Color("secondary"))
             .navigationViewStyle(StackNavigationViewStyle())
@@ -28,26 +28,30 @@ extension DashboardView {
         VStack {
             ScrollView {
                 ForEach(0..<8, id: \.self) {index in
-                    ZStack {
-                        Spacer()
-                        VStack {
-                            Button("MESSAGE BAR"){Button("Message Bar") { print("Button tapped!") }}
-                            
-                            Spacer()
-                            Text("You can find some `better` BETTips here...")
-                            Spacer().frame(width: 4)
-                            
-                        }.padding([.bottom, .trailing], 4)
+                    HStack {
+                        VStack {}
+                        Text("Circle")
+                            .background(Color.yellow)
+                            .frame(width: 10)
+                        
+                        HStack {}
+                        Text("Gambling State")
+                        Text("Texas")
+                        Text("I am betting but not as much")
+                        Text("@everyone")
+                            .foregroundColor(Color.gray)
+                        
+                        VStack {}
+                            .border(Color.red)
                         
                     }.frame(height: 56)
-                    Spacer()
+                        .background(Color("dashboard-tip-background"))
+                  //  Spacer()
                 }
             }.padding([.leading, .trailing], 10)
-            
+            Text(viewModel.dashboardForm.txtSenderMessage)
+                .foregroundColor(.white)
             // MARK: Sender Text Field
-            TextField(LoginStrings.usernamePlaceholder,
-                      text: $viewModel.dashboardForm.txtSenderMessage)
-                 Button("Infinite chats tips"){Button("Infinite chat tips") { print("Button tapped!") }}
             TextField(LoginStrings.usernamePlaceholder,
                       text: $viewModel.dashboardForm.txtSenderMessage)
                 .font(.custom("OpenSans-SemiBold", size: 30))
