@@ -14,11 +14,11 @@ struct BetTipsApp: App {
             //LoginView(viewModel: .init())
             
             // From Local then this
-            let data = getFeedList()
-            DashboardView(viewModel: .init(data))
+//            let data = getFeedList()
+//            DashboardView(viewModel: .init(data))
             
             // From Api then this
-            // DashboardView(viewModel: .init())
+             DashboardView(viewModel: .init())
         }
     }
 }

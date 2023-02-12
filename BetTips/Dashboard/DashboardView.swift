@@ -14,7 +14,9 @@ struct DashboardView: View {
             }
             .background(Color("dashboard-background"))
             .navigationViewStyle(StackNavigationViewStyle())
-            .onAppear {}
+            .onAppear {
+                viewModel.updateList()
+            }
             .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())
             .navigationBarHidden(true).navigationViewStyle(StackNavigationViewStyle())
         }
