@@ -12,7 +12,7 @@ struct DashboardView: View {
                     LoaderView()
                 }
             }
-            .background(Color("secondary"))
+            .background(Color("foreground-textedit"))
             .navigationViewStyle(StackNavigationViewStyle())
             .onAppear {}
             .navigationBarTitle("").navigationViewStyle(StackNavigationViewStyle())

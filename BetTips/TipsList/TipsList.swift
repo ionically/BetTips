@@ -16,25 +16,37 @@ struct TipsList: View {
                                     Text("")
                                         .border(Color.red)
                                 }
-                                .frame(width: 10)
-                                .background(Color.yellow)
+                                .frame(width: 5)
+                                .frame(height: 150)
+                                .background(Color("dashboard-row-tip-thin-highlight"))
+                                
                                 VStack {
-                                    Text("")
+                                    Image(systemName: "circle.fill")
+                                        .foregroundColor(Color("dashboard-row-tip-thin-highlight"))
+                                        .font(.system(size:40))
+                                    
                                 }
-                                .frame(width: 40)
-                                .border(Color.purple)
-                                VStack {
-                                    Text("appleafkadhfkjadshfkjadjkfhaskjdfhkjashdfasdkfjhasdfkjsd")
-                                    Text("mango")
-                                    Text("mango")
-                                    Text("mango")
+                             
+                                VStack() {
+                                    Spacer()
+                                Text("Gambling State")
+                                    Spacer()
+                                Text("Texas")
+                                    Spacer()
+                                Text("Syracuse and Tech I'm betting but not as much")
+                                    Spacer()
+                                Text("@everyone")
+                                    Spacer()
                                 }
-                                .background(Color.yellow)
+                                .frame(minWidth: 0,
+                                       maxWidth: .infinity)
+                                .background(Color("dashboard-tip-background"))
                                 Spacer()
                             }
                             .border(Color.black)
                             .frame(minWidth: 0,
                                    maxWidth: .infinity)
+                            .background(Color("dashboard-tip-background"))
                         }
                         Spacer()
                             .frame(height:4)
@@ -45,6 +57,7 @@ struct TipsList: View {
         }
         .frame(minWidth: 0,
                maxWidth: .infinity)
+        .background(Color.black)
         
     }
     
